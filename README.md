@@ -1,6 +1,7 @@
 # esx_kfc
 This is a GTA 5 Fivem Script
 
+It's a kfc shop that sells food and drinks for RP servers.
 
 
 # Script Requirements
