@@ -32,7 +32,7 @@ Add the Following lines to /server/main.lua at esx_ :
 	TriggerClientEvent('esx_status:add', source, 'hunger', 350000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
 	TriggerClientEvent('esx:showNotification', source, 'You consumed a chicken wing')
-end)
+	end)
 
 ESX.RegisterUsableItem('salad', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -42,7 +42,7 @@ ESX.RegisterUsableItem('salad', function(source)
 	TriggerClientEvent('esx_status:add', source, 'hunger', 350000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
 	TriggerClientEvent('esx:showNotification', source, 'You consumed a salad')
-end)
+	end)
 
 
 ESX.RegisterUsableItem('patates', function(source)
@@ -53,7 +53,7 @@ ESX.RegisterUsableItem('patates', function(source)
 	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
 	TriggerClientEvent('esx:showNotification', source, 'patates')
-end)
+	end)
 
 
 
@@ -65,7 +65,7 @@ ESX.RegisterUsableItem('cocacola', function(source)
 	TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
 	TriggerClientEvent('esx:showNotification', source, 'Used CocaCola')
-end)
+	end)
 
 ESX.RegisterUsableItem('sprite', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -75,7 +75,7 @@ ESX.RegisterUsableItem('sprite', function(source)
 	TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
 	TriggerClientEvent('esx:showNotification', source, 'Used Sprite')
-end)
+	end)
 
 ESX.RegisterUsableItem('lemonada', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -85,7 +85,7 @@ ESX.RegisterUsableItem('lemonada', function(source)
 	TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
 	TriggerClientEvent('esx:showNotification', source, 'Used Lemonada')
-end)
+	end)
 
 ESX.RegisterUsableItem('soda', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -95,7 +95,7 @@ ESX.RegisterUsableItem('soda', function(source)
 	TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
 	TriggerClientEvent('esx_basicneeds:onDrink', source)
 	TriggerClientEvent('esx:showNotification', source, 'Used Soda')
-end)"
+	end)"
 
 # Legal
 ### License
