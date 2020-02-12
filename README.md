@@ -21,7 +21,7 @@ esx_optionalsneeds => https://github.com/ESX-Org/esx_optionalneeds
 3) Import esx_kfc.sql 
 4) Add to your server.cfg : start esx_kfc
 
-# Manger l'hamburger
+# Register Eatable Items
 Add the Following lines to /server/main.lua at esx_ : 
 
 "ESX.RegisterUsableItem('chicken_wings', function(source)
