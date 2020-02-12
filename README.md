@@ -1,7 +1,7 @@
 # esx_kfc
 This is a GTA 5 Fivem Script
 
-It's a kfc shop that sells food and drinks for RP servers.
+This is a KFC shop that sells food and drinks for RP servers.
 
 
 # Script Requirements
@@ -25,78 +25,80 @@ esx_optionalsneeds => https://github.com/ESX-Org/esx_optionalneeds
 # Register Eatable Items
 Add the Following lines to /server/main.lua at esx_ : 
 
-"ESX.RegisterUsableItem('chicken_wings', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
+	"
+	ESX.RegisterUsableItem('chicken_wings', function(source)
+		local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('chicken_wings', 1)
+		xPlayer.removeInventoryItem('chicken_wings', 1)
 
-	TriggerClientEvent('esx_status:add', source, 'hunger', 350000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, 'You consumed a chicken wing')
+		TriggerClientEvent('esx_status:add', source, 'hunger', 350000)
+		TriggerClientEvent('esx_basicneeds:onEat', source)
+		TriggerClientEvent('esx:showNotification', source, 'You consumed a chicken wing')
 	end)
 
-ESX.RegisterUsableItem('salad', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
+	ESX.RegisterUsableItem('salad', function(source)
+		local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('salad', 1)
+		xPlayer.removeInventoryItem('salad', 1)
 
-	TriggerClientEvent('esx_status:add', source, 'hunger', 350000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, 'You consumed a salad')
-	end)
-
-
-ESX.RegisterUsableItem('patates', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-
-	xPlayer.removeInventoryItem('patates', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
-	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, 'patates')
+		TriggerClientEvent('esx_status:add', source, 'hunger', 350000)
+		TriggerClientEvent('esx_basicneeds:onEat', source)
+		TriggerClientEvent('esx:showNotification', source, 'You consumed a salad')
 	end)
 
 
+	ESX.RegisterUsableItem('patates', function(source)
+		local xPlayer = ESX.GetPlayerFromId(source)
 
-ESX.RegisterUsableItem('cocacola', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
+		xPlayer.removeInventoryItem('patates', 1)
 
-	xPlayer.removeInventoryItem('cocacola', 1)
-
-	TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, 'Used CocaCola')
+		TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
+		TriggerClientEvent('esx_basicneeds:onEat', source)
+		TriggerClientEvent('esx:showNotification', source, 'patates')
 	end)
 
-ESX.RegisterUsableItem('sprite', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('sprite', 1)
 
-	TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, 'Used Sprite')
+	ESX.RegisterUsableItem('cocacola', function(source)
+		local xPlayer = ESX.GetPlayerFromId(source)
+
+		xPlayer.removeInventoryItem('cocacola', 1)
+
+		TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
+		TriggerClientEvent('esx_basicneeds:onDrink', source)
+		TriggerClientEvent('esx:showNotification', source, 'Used CocaCola')
 	end)
 
-ESX.RegisterUsableItem('lemonada', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
+	ESX.RegisterUsableItem('sprite', function(source)
+		local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('lemonada', 1)
+		xPlayer.removeInventoryItem('sprite', 1)
 
-	TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, 'Used Lemonada')
+		TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
+		TriggerClientEvent('esx_basicneeds:onDrink', source)
+		TriggerClientEvent('esx:showNotification', source, 'Used Sprite')
 	end)
 
-ESX.RegisterUsableItem('soda', function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
+	ESX.RegisterUsableItem('lemonada', function(source)
+		local xPlayer = ESX.GetPlayerFromId(source)
 
-	xPlayer.removeInventoryItem('soda', 1)
+		xPlayer.removeInventoryItem('lemonada', 1)
 
-	TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
-	TriggerClientEvent('esx_basicneeds:onDrink', source)
-	TriggerClientEvent('esx:showNotification', source, 'Used Soda')
-	end)"
+		TriggerClientEvent('esx_status:add', source, 'thirst', 200000)
+		TriggerClientEvent('esx_basicneeds:onDrink', source)
+		TriggerClientEvent('esx:showNotification', source, 'Used Lemonada')
+	end)
+
+	ESX.RegisterUsableItem('soda', function(source)
+		local xPlayer = ESX.GetPlayerFromId(source)
+
+		xPlayer.removeInventoryItem('soda', 1)
+
+		TriggerClientEvent('esx_status:add', source, 'thirst', 350000)
+		TriggerClientEvent('esx_basicneeds:onDrink', source)
+		TriggerClientEvent('esx:showNotification', source, 'Used Soda')
+	end)
+	"
 
 # Legal
 ### License
