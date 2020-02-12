@@ -23,7 +23,7 @@ esx_optionalsneeds => https://github.com/ESX-Org/esx_optionalneeds
 4) Add to your server.cfg : start esx_kfc
 
 # Register Eatable Items
-Add the Following lines to /server/main.lua at esx_ : 
+Add the Following lines to /server/main.lua at esx_basicneeds : 
 
 	
 	ESX.RegisterUsableItem('chicken_wings', function(source)
