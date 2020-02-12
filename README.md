@@ -25,7 +25,7 @@ esx_optionalsneeds => https://github.com/ESX-Org/esx_optionalneeds
 # Register Eatable Items
 Add the Following lines to /server/main.lua at esx_ : 
 
-	"
+	
 	ESX.RegisterUsableItem('chicken_wings', function(source)
 		local xPlayer = ESX.GetPlayerFromId(source)
 
@@ -98,7 +98,7 @@ Add the Following lines to /server/main.lua at esx_ :
 		TriggerClientEvent('esx_basicneeds:onDrink', source)
 		TriggerClientEvent('esx:showNotification', source, 'Used Soda')
 	end)
-	"
+	
 
 # Legal
 ### License
