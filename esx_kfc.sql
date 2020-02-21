@@ -36,5 +36,5 @@ INSERT INTO `items` (`name`, `label`, `limit`) VALUES
 	('cocacola', 'Coca Cola', 5),
 	('sprite', 'Sprite', 5),
 	('soda', 'Soda', 5),
-	('lemonada', 'Lemonada', 5),
+	('lemonada', 'Lemonada', 5)
 ;
